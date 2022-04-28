@@ -67,6 +67,7 @@ button {
     background-color: hsl(300, 69%, 71%);
     color: hsl(257, 40%, 49%);
     border: hsl(300, 69%, 71%) .5rem solid;
+    transition: 5s ease;
 }
 
 /* icon-follow-me-online */
@@ -92,6 +93,7 @@ button {
     color: hsl(300, 69%, 71%);
     border: hsl(300, 69%, 71%) solid .3rem;
     border-radius: 100%;
+    transition: .5s ease;
 }
 
 @media screen and (max-width: 400px) {
