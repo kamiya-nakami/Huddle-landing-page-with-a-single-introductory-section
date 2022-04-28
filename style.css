@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/bg-desktop.svg) no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    grid-template-rows: .2fr 1fr auto;
+}
+
+
+.logo {
+    padding: 1rem;
+}
+
+.img {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+    padding-left: 1rem;
+}
+
+.content {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+.content h1 {
+    color: #fff;
+    padding: 2rem 0;
+    width: 20rem;
+}
+
+.content p {
+    color: #fff;
+    padding: 1rem 0;
+    width: 29rem;
+}
+
+
+/* button */
+button {
+    all: unset;
+}
+
+.Register {
+    width: 12rem;
+    height: 2rem;
+    border: #fff .5rem solid;
+    border-radius: 2rem;
+    box-shadow: 9px 8px 23px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    color: hsl(257, 40%, 49%);
+}
+
+.Register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(257, 40%, 49%);
+    border: hsl(300, 69%, 71%) .5rem solid;
+}
+
+/* icon-follow-me-online */
+
+.icon-follow-me-online {
+    grid-row: 3;
+    grid-column: 3;
+    display: flex;
+    justify-content: end;
+    margin-right: 3rem;
+}
+
+:is(.bi-instagram, .bi-twitter, .bi-facebook) {
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border: #fff .3rem solid;
+    border-radius: 100%;
+    margin: 0 .5rem;
+}
+
+:is(.bi-instagram, .bi-twitter, .bi-facebook, ):hover {
+    color: hsl(300, 69%, 71%);
+    border: hsl(300, 69%, 71%) solid .3rem;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background: url(/images/bg-mobile.svg) no-repeat cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr 1fr 4rem 2rem;
+    }
+
+    .logo {
+            grid-row: 1;
+        }
+
+    .logo-huddle {
+        width: 22rem;
+    }
+
+    .img {
+        grid-row: 2;
+    }
+    
+
+    .content {
+        grid-row: 3;
+        grid-column: 1;
+        padding: 0 3rem;
+    }
+
+    .content h1 {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .content p {
+        text-align: center;
+        width: 20rem;
+    }
+
+    .button {
+        padding: 0 4rem;
+    }
+
+    .icon-follow-me-online {
+        grid-row: 5;
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+}
